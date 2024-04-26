@@ -1,0 +1,17 @@
+<h2>Diretiva de estilo</h2>
+
+<p
+  [ngStyle]="{
+    'background-color': color,
+    'font-size': size + 'px',
+    color: 'red'
+  }"
+>
+  Estilo com ngStyle
+</p>
+<ul class="ingredient-list">
+  <li *ngFor="let hobbie of hobbies">{{ hobbie }}</li>
+</ul>
+<h2>Diretiva de classe</h2>
+<p [ngClass]="{ errorClass: hasError }">Estilo com ngClass</p>
+

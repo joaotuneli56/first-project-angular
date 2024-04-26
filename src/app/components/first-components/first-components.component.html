@@ -1,0 +1,33 @@
+<p>Dados do meu primeiro component</p>
+
+<h2> Olá meu nome é {{name}} !</h2>
+
+<p>Segue minha ficha:</p>
+
+<ul>
+  <li>
+    Idade: {{age}}
+  </li>
+</ul>
+<ul>
+  <li>
+    Marca {{car.make}}
+  </li>
+</ul>
+<ul>
+  <li>
+    Modelo: {{car.model}}
+  </li>
+</ul>
+<p>Hobbie: {{hobbies[1]}}</p>
+
+<ul class="ingredient-list" >
+  <li *ngFor="let task of hobbies"> {{task}}</li>
+</ul>
+
+<hr>
+<h2>Inserindo Component</h2>
+<app-into-component [name]="name"></app-into-component>
+
+
+
